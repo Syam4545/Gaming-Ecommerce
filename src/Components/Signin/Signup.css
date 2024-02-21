@@ -1,0 +1,132 @@
+body {
+  background-image: url(../../Images/22.gif);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.signup-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.signup-box .user-box {
+  position: relative;
+}
+
+.signup-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.signup-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.signup-box .user-box input:focus~label,
+.signup-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.signupButton {
+  position: relative;
+  display: inline-block;
+  background-color:transparent;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.signup-box .signupButton:hover {
+  border-color: #a803f4;
+  background: rgba(24, 20, 20, 0.987);
+  color: #e4e2e2;
+  font-weight: bold;
+  border-radius: 5px;
+  transform: scale(1.1);
+
+}
+
+.signup-box .signupButton span {
+  position: absolute;
+  display: block;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.signup-box .signupButton span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 35px;
+  background: linear-gradient(90deg, transparent, #a803f4);
+
+  animation: btn-anim1 1s linear infinite;
+}
+
+.signupDiv {
+  margin-top: -35px;
+  text-align: center;
+}
+
+.NewLogin {
+  margin-top: 50px;
+  color: aliceblue;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.NewLogin button {
+  color: #a803f4;
+  background-color: rgba(24, 20, 20, 0.987);
+  border-style: none;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.NewLogin button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+
+}
